@@ -1,0 +1,28 @@
+CONTROLLER	KEYWORD1
+SLAVE	KEYWORD1
+HANDSHAKE KEYWORD1
+
+outString	KEYWORD2
+setMeasureValue	KEYWORD2
+sendStatus	KEYWORD2
+RTCupdate	KEYWORD2
+deepSleepReason	KEYWORD2
+content	KEYWORD2
+onMacRecv_cb KEYWORD2
+resultToString KEYWORD2
+deviceTipe KEYWORD2
+resultToMQTTString KEYWORD2
+
+Door_Open_Sensor LITERAL1
+Door_Ring LITERAL1
+Mail LITERAL1
+Temperature_Sensor LITERAL1
+Humidity_Sensor LITERAL1
+Voltmetr LITERAL1
+SoilMoistureSensor LITERAL1
+Water_pump LITERAL1
+Atmospheric_pressure LITERAL1
+Illuminance LITERAL1
+Meteostation LITERAL1
+ESP_NOW_Gateway LITERAL1
+Counter_Gas LITERAL1

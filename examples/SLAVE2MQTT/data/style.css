@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 5px;
+    padding: 5px;
+    overflow-x: hidden;
+    /* Запрещает горизонтальный скролл */
+}
+
+input,
+select {
+    min-width: 80px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+label {
+    text-align: center;
+}
+
+.segment {
+    min-width: 50px;
+    max-width: 67px;
+}
+
+
+button {
+    width: 40%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1.25rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    background-color: #b9d4f9;
+    font-size: 1.25rem;
+    border-collapse: separate;
+    /* обязательно для закруглений */
+    border-spacing: 0;
+    border: 0px solid #576be0;
+    border-radius: 10px;
+    /* закругление углов */
+    overflow: hidden;
+}
+
+th,
+td {
+    color: #0d1a62;
+    padding: 8px;
+    border-collapse: separate;
+    /* обязательно для закруглений */
+    border: 1px solid #585757;
+    border-radius: 3px;
+    /* закругление углов */
+    overflow: hidden;
+    /* если нужно скрыть острые края внутри */
+}
+
+.highlight-row {
+    background-color: #3b4ba4;
+}
+
+.section {
+    color: #d1d6f1;
+}
+
+.center {
+    text-align: center;
+}
+
+.battery-title {
+    font-weight: bold;
+    font-kerning: none;
+    color: #0d1a62;
+    font-size: 20px;
+    /* или 24px, если хочешь крупнее */
+    margin: 5px 0;
+}
+
+.formend {
+    background: #b9d4f9;
+    margin-top: 7%;
+    border-radius: 3%;
+    text-align: center;
+    display: none
+}

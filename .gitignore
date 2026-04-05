@@ -1,0 +1,4 @@
+.pio/
+.vscode/
+build/
+examples/SLAVE2MQTT/data/config.json

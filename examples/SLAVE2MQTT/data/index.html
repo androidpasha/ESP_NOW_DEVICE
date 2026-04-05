@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Налаштування</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+
+<body>
+    <script src="transferdata.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+	<form class="form" id="form">
+
+    <div class="center battery-title">
+        ESP-NOW to MQTT and Telegram gateway
+    </div>
+    <br>
+    <table>
+
+        <tr class="highlight-row">
+            <td>
+                <div class="center section"><b>Параметри Wi-fi</b></div>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="center"><label for="SSID"><b>Wi-fi SSID :</b></label><br>
+                    <input id="SSID" name="SSID" placeholder="SSID">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="center"><label for="password"><b>Wi-fi pass:</b></label><br>
+                    <input type="Password" id="Password" name="Password" placeholder="password">
+                </div>
+            </td>
+        </tr>
+        
+        <tr class="highlight-row">
+            <td class="noinvisible">
+                <div class="center section"><b>Параметри Telegram</b></div>
+                </label>
+            </td>
+        </tr>
+
+        <td class="noinvisible">
+            <div class="center"><label for="Token"><b>Telegram bot token:</b></label><br>
+                <input type="text" id="Token" name="Token" placeholder="XXXXXX:YYYYYYYY">
+            </div>
+        </td>
+
+        <tr class="highlight-row">
+            <td>
+                <div class="center section"><b>Параметри MQTT</b></div>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+
+                <div class="center input-group"><label for="mqtt_server"><b>Server and port:</b></label><br>
+                    <input type="text" id="mqtt_server"
+                        inputmode="text" class="center" name="mqtt_server"  id="mqtt_server"placeholder="192.168.1.100">
+                    <span class="dot">:</span>
+                    <input type="number" id="mqtt_port" min="0" max="65535" step="1" maxlength="5" pattern="\d*"
+                        inputmode="numeric" class="segment" name="mqtt_port"  id="mqtt_port" placeholder="1883">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="center"><label for="    "><b>Login:</b></label><br>
+                    <input type="text" id="mqtt_user" name="mqtt_user" placeholder="MQTT login">
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="center"><label for="mqtt_pass"><b>Password:</b></label><br>
+                    <input type="password" id="mqtt_pass" name="mqtt_pass" placeholder="MQTT pasword">
+                </div>
+            </td>
+        </tr>
+
+        <tr class="highlight-row">
+            <td class="noinvisible">
+                <div class="center section"><b>Wake-on-LAN</b></div>
+                </label>
+            </td>
+        </tr>
+
+        <td class="noinvisible">
+            <div class="center"><label for="MAC"><b>mac WOL:</b></label><br>
+                <input type="text" id="MAC" name="MAC" placeholder="XX:XX:XX:XX:XX:XX">
+            </div>
+            <br>
+        </td>
+        
+               
+    </table>
+    
+    <div class="center">
+        <br><button id="ButtonSave" type="submit" onclick="saveSettings()">Save</button><br><br>
+    </div>
+</form>
+<form class="formend" id="formend">
+    <br>
+    <h2 id="endmsg">Сохранение настроек...</h2><br>
+</form>
+
+</body>
+</html>
